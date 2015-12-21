@@ -7,8 +7,6 @@ function Animator(element) {
 		var style = window.getComputedStyle(element);
 		var initial = style.getPropertyValue(cssProperty);
 		initial = parseInt(initial);
-
-
 		var step = (value - initial) / (duration / 50);
 		var counter = 0;
 		intervalid = setInterval(function() {
@@ -21,7 +19,6 @@ function Animator(element) {
 	}
 	this.stop = function(){
 		clearInterval(self.intervalId);
-		console.log("cleared");
 	}
 
 }

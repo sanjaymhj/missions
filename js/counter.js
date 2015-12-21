@@ -1,8 +1,7 @@
 var number1Container = document.getElementById("counter");
 var number = document.getElementsByClassName("number");
-console.log(number1Container.offsetTop);
 var counterStarted = false;
-var startPos = number1Container.offsetTop + number1Container.offsetHeight/2;
+var startPos = number1Container.offsetTop - number1Container.offsetHeight;
 var numberAnimate1 = new NumberAnimator(number1Container,number[0],1000);
 var numberAnimate2 = new NumberAnimator(number1Container,number[1],1000);
 var numberAnimate3 = new NumberAnimator(number1Container,number[2],1000);
@@ -16,4 +15,3 @@ window.onscroll = function(){
 		numberAnimate4.startCount();
 	}
 };
-

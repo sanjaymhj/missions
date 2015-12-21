@@ -11,7 +11,6 @@ function NumberAnimator(container,statObj,duration){
 			val += 1;
 			if(val <= maxVal){
 				statObj.innerHTML = formatting(val);
-				console.log('here',statObj.innerHTML = formatting(val));
 			}
 			else
 			{
@@ -22,7 +21,6 @@ function NumberAnimator(container,statObj,duration){
 	}
 
 	var formatting=function(val){
-		console.log('inside formatting');
-	return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 	}
 }
