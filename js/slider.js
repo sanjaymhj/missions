@@ -1,4 +1,3 @@
-
 function Slider(durationLong){
 	var sliderLong = document.getElementsByClassName('slider-long')[0];
 	var slider = document.getElementsByClassName('slider')[0];
@@ -41,7 +40,15 @@ function Slider(durationLong){
 		active = active == images.length?active=1:++active;
 		animator.animate('margin-top',ml,duration);
 	}
+	this.updateParameters = function(){
+		imageHeight = sliderLong.children[0].offsetHeight; 
+		slider.style['height'] = imageHeight+'px';
+	}
+
 	bulletSlider();
 	sliderid=setInterval(slide,durationLong);
 }
 var missionSlider = new Slider(2000);
+window.onresize = function(){
+	missionSlider.updateParameters();
+};
