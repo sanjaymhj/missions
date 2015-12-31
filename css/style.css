@@ -1,5 +1,5 @@
 body,html{
-	height:  100%;
+	height: 100%;
 }
 
 .main-container{
@@ -7,11 +7,11 @@ body,html{
 }
 
 .header-wrapper{
-	position:  absolute;
+	position: absolute;
 	left: 0;
 	top: 0;
-	z-index:  2;
-	width:  100%;
+	z-index: 10;
+	width: 100%;
 }
 
 .header-container{
@@ -26,7 +26,8 @@ body,html{
 	float: right;
 }
 .nav-bar ul{
-	list-style: none; padding: 6px 0px;
+	list-style: none;
+	padding: 6px 0px;
 }
 
 .nav-bar ul li{
@@ -35,59 +36,70 @@ body,html{
 }
 
 .nav-bar ul li a{
-	display:  block;
+	display: block;
 	text-decoration: none;
 	color: white;
 	font-family: 'Lato';
-	font-weight:  bold;
-	font-size:  15px;
-	}
+	font-weight: bold;
+	font-size: 15px;
+}
 
 .nav-bar ul li:hover{
 	border: 2px solid #fff;
 	padding: 8px 19px 7px 19px;
 }
+
 .burger-menu{
-	display:none;
-	float:right;
-	background-image:url('../images/burger-menu.png');
-	background-size:100% 100%;
-	width:50px;
-	height:50px;
-	margin-right:18px;
+	display: none;
+	float: right;
+	background-image: url('../images/burger-menu.png');
+	background-size: 100% 100%;
+	width: 50px;
+	height: 50px;
+	margin-right: 18px;
 
 }
 
 .slider-wrapper{
-	height:  100%;
-	position:  relative;
+	height: 100%;
+	position: relative;
 }
 
 .slider{
-	width:  100%;
-	overflow:  hidden;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slider .filter{
+	width: 100%;
+	background: url('../images/low-background.png');
+	position: absolute;
+	z-index: 3;
+	height: 100%;
 }
 
 .slider-long img{
-	width:  100%;
-    padding:  0px;
-    margin:  0px;
+	width: 100%;
+    padding: 0px;
+    margin: 0px;
     height: 100%;
 }
 
 .slider-long{
-	width:  100%;
-	height:  100%;
+	width: 100%;
+	height: 100%;
 }
+
 .slider-long .slider-content-wrapper{
 	position: relative;
 }
 
 .slider-long .slidertext{
-	position:  absolute;
+	position: absolute;
 	top: 0px;
 	text-align: center;
 	width: 100%;
+	z-index: 5;
 }
 
 .slidertext img{
@@ -111,24 +123,24 @@ body,html{
 }
 
 .motto{
-	font-size:  25px;
+	font-size: 25px;
 	padding: 47px 0px 24px 0px;
 }
 
 .slidertext .title{
-	font-size:  74px;
+	font-size: 74px;
 	border: 5px solid #fff;
 	display: inline-block;
-	padding:22px 32px 6px 24px;
-	letter-spacing:  0px;
+	padding: 22px 32px 6px 24px;
+	letter-spacing: 0px;
 }
 .slidertext .message{
 	clear: both;
-	font-size:  24px;
+	font-size: 24px;
 	display: inline-block;
 	padding: 26px 0px;
-	font-weight:  initial;
-	letter-spacing:  0px;
+	font-weight: initial;
+	letter-spacing: 0px;
 }
 
 .bullet-container ul{
@@ -140,7 +152,9 @@ body,html{
 	display: block; 
 	padding: 5px; 
 	background: url(../images/dot.png) 50% 50% no-repeat; 
-	width: 10px;height: 10px; margin: 10px;
+	width: 10px;
+	height: 10px;
+	margin: 10px;
 }
 
 .bullet-container ul li.active{
@@ -151,13 +165,14 @@ body,html{
 	position: absolute;
 	top: 35%;
 	right: 20px;
+	z-index: 9;
 }
 
 .next-page-container{
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	bottom: 6.3888%;
+	bottom: 3.3888%;
 }
 .next-page{
 	width: 99px;
@@ -180,19 +195,19 @@ body,html{
 	width: 24.61312%;
 	margin: 0px auto;
 	position: relative;
-	
 }
+
 .service1{
-	background:  url(../images/service1.png) no-repeat;	
+	background: url(../images/service1.png) no-repeat;	
 }
 .service2{
-	background:  url(../images/service2.png) no-repeat;
+	background: url(../images/service2.png) no-repeat;
 }
 .service3{
-	background:  url(../images/service3.png) no-repeat;
+	background: url(../images/service3.png) no-repeat;
 }
 .service4{
-	background:  url(../images/service4.png) no-repeat;
+	background: url(../images/service4.png) no-repeat;
 }
 
 .service-image{
@@ -206,7 +221,7 @@ body,html{
 .service h2{
 	font-family: 'Lato';
 	font-weight: bold;
-	font-size:  18px;
+	font-size: 18px;
 	padding: 8px 0px;
 }
 
@@ -220,7 +235,7 @@ body,html{
 .service p
 {
 	padding: 15px 10px;
-	font-family:  'Vollkorn';
+	font-family: 'Vollkorn';
 	font-size: 15px;
 	line-height: 23px;
 }
@@ -236,7 +251,7 @@ body,html{
 	font-size: 14px;
 	background: #333333;
 	color: #fff;
-	font-weight:  bold;
+	font-weight: bold;
 	margin: 0 auto;
 }
 
@@ -245,19 +260,19 @@ body,html{
 }
 
 .service-content:hover .service1{
-	background:  url(../images/service1-hover.png) no-repeat	;
+	background: url(../images/service1-hover.png) no-repeat	;
 }
 .service-content:hover .service2{
-	background:  url(../images/service2-hover.png) no-repeat	;
+	background: url(../images/service2-hover.png) no-repeat	;
 }
 .service-content:hover .service3{
-	background:  url(../images/service3-hover.png) no-repeat	;
+	background: url(../images/service3-hover.png) no-repeat	;
 }
 .service-content:hover .service4{
-	background:  url(../images/service4-hover.png) no-repeat	;
+	background: url(../images/service4-hover.png) no-repeat	;
 }
 .service-content:hover .service-bar{
-	background:  #333333;
+	background: #333333;
 }
 .service-content:hover .read-more{
 	background: #fff;
@@ -285,15 +300,15 @@ body,html{
 }
 
 .statistics img{
-	padding:  17px 0px;
+	padding: 17px 0px;
 }
 
 .statistics .number{
-	display:  block;
-	font-family:  'Lato Light';
-	font-size:  47px;
-	color:  #ffaf3a;
-	padding:  23px 0px 10px;
+	display: block;
+	font-family: 'Lato Light';
+	font-size: 47px;
+	color: #ffaf3a;
+	padding: 23px 0px 10px;
 }
 
 .statistics .stat-seperator
@@ -313,7 +328,7 @@ body,html{
 }
 
 .support-wrapper{
-	background:  url(../images/support-background.png);
+	background: url(../images/support-background.png);
 	background-size: 100% 100%;
 }
 
@@ -322,13 +337,13 @@ body,html{
 	text-align: center;
 }
 
-.support-title-wrapper{
-	display:inline-block;
+.support-title-wrapper, .contact-title-wrapper{
+	display: inline-block;
 
 }
 
 .support-container .seperator{
-	width:100%;
+	width: 100%;
 	height: 3px;
 	background: #fff;
 	margin: 0 auto;
@@ -337,9 +352,9 @@ body,html{
 .support-title{
 	font-size: 37px;
 	color: #fff;
-	font-family:  'Vollkorn';
+	font-family: 'Vollkorn';
 	font-weight: bold;
-	line-height:  28px;
+	line-height: 28px;
 	padding-top: 9px;
 	display: block;
 }
@@ -347,7 +362,6 @@ body,html{
 .support-container img{
 	display: block;
 	margin: 0 auto;
-
 }
 
 .support-logo{
@@ -362,9 +376,9 @@ body,html{
 }
 
 .support{
-	font-family:  'Vollkorn';
+	font-family: 'Vollkorn';
 	max-width: 47.2636815920398%;
-	text-align:  left;
+	text-align: left;
 	color: #fff;
 	min-height: 172px;
 	padding: 15px 12px 15px 18px;
@@ -399,19 +413,18 @@ body,html{
 }
 
 .contact-top .seperator{
-	width: 222px;
+	width: 100%;
 	height: 3px;
 	background: #343434;
-	display: block;
-	margin:  0 auto;
+	margin: 0 auto;
 }
 
 .contact-top .contact-title{
 	font-size: 35px;
 	padding: 8px 0px 2px 0px;
-	font-family:  'Vollkorn';
+	font-family: 'Vollkorn';
 	font-weight: bold;
-	line-height:  28px;
+	line-height: 28px;
 	display: block;
 	color: #343434;
 }
@@ -425,13 +438,13 @@ body,html{
 .contact-top p{
 	font-family: 'Vollkorn';
 	color: #303030;
-	line-height:  22px;
+	line-height: 22px;
 	font-size: 16px;
 }
 
 .maps{
-	height:  500px;
-	background:  url(../images/maps.png);
+	height: 500px;
+	background: url(../images/maps.png);
 	background-size: 100% 100%;
 }
 
@@ -445,11 +458,11 @@ body,html{
 }
 
 .contact-bottom .contact-left .content{
-	font-weight:  bold;
-	font-family:  'Lato';
-	display:  block;
-	font-size:  18px;
-	padding:  18px 0px 7px 0px;
+	font-weight: bold;
+	font-family: 'Lato';
+	display: block;
+	font-size: 18px;
+	padding: 18px 0px 7px 0px;
 }
 
 .contact-bottom .contact-left .details{
@@ -460,9 +473,9 @@ body,html{
 }
 
 .contact-bottom .seperator{
-	width:  97.26495726495726%;
-	height:  1px;
-	background:  url(../images/contact-seperator.png) no-repeat;
+	width: 97.26495726495726%;
+	height: 1px;
+	background: url(../images/contact-seperator.png) no-repeat;
 }
 
 .contact-bottom .social{
@@ -590,7 +603,7 @@ body,html{
 	font-family: 'Lato';
 	font-size: 16px;
 	font-weight: bold;
-	color: white;
+	color: #fff;
 	background-image: url(../images/submit-background.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
