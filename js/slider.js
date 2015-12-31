@@ -4,14 +4,16 @@ function Slider(durationLong){
 	var images = sliderLong.children;
 	var animator = new Animator(sliderLong);
 	var active = 1;
-	var ml = 0;
+	var marginTop = 0;
 	var duration = 200;
-	var imageHeight = sliderLong.children[0].offsetHeight;
-	slider.style['height'] = imageHeight+'px';
+	slider.style['height'] = window.innerHeight +'px';
+	var imageHeight = window.innerHeight;
+
 	var bullets = [];
 	var bulletcontainer = document.getElementsByClassName('bullets')[0];
 
 	for(var i = 1;i <= images.length;i++){
+		images[i-1].style.height = imageHeight + 'px';
 		 	bullets[i] = document.createElement('li');
 		 	var t2=document.createTextNode(' ');
 			bullets[i].onclick = (function(bulletNumber){
@@ -36,9 +38,9 @@ function Slider(durationLong){
 
 	function slide(){
 		bulletSlider();
-		ml=(active-1)*-1*imageHeight;
+		marginTop=(active-1)*-1*imageHeight;
 		active = active == images.length?active=1:++active;
-		animator.animate('margin-top',ml,duration);
+		animator.animate('margin-top',marginTop,duration);
 	}
 	this.updateParameters = function(){
 		imageHeight = sliderLong.children[0].offsetHeight; 
@@ -48,7 +50,7 @@ function Slider(durationLong){
 	bulletSlider();
 	sliderid=setInterval(slide,durationLong);
 }
-var missionSlider = new Slider(2000);
+var missionSlider = new Slider(100000);
 window.onresize = function(){
 	missionSlider.updateParameters();
 };
