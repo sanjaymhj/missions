@@ -50,7 +50,7 @@ function Slider(durationLong){
 	bulletSlider();
 	sliderid=setInterval(slide,durationLong);
 }
-var missionSlider = new Slider(100000);
+var missionSlider = new Slider(3000);
 window.onresize = function(){
 	missionSlider.updateParameters();
 };
