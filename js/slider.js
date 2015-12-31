@@ -18,7 +18,6 @@ function Slider(durationLong){
 		 	var t2=document.createTextNode(' ');
 			bullets[i].onclick = (function(bulletNumber){
 			return function(){
-				console.log(bulletNumber,' is the clicked buller');
 				animator.stop();
 				clearInterval(sliderid);
 				active = bulletNumber;
@@ -43,8 +42,12 @@ function Slider(durationLong){
 		animator.animate('margin-top',marginTop,duration);
 	}
 	this.updateParameters = function(){
-		imageHeight = sliderLong.children[0].offsetHeight; 
+		imageHeight =window.innerHeight; 
 		slider.style['height'] = imageHeight+'px';
+		for(var i = 1;i <= images.length;i++){
+			images[i-1].style.height = imageHeight + 'px';
+		}
+		
 	}
 
 	bulletSlider();

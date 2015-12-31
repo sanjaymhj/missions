@@ -2,24 +2,19 @@
 @media(max-width:  1200px)
 {
 	.nav-bar ul li{
-		/*clear:both;*/
 		padding: 10px 6px 9px 6px;
 	}
 
 	.nav-bar ul li:hover{
 		padding: 8px 4px 7px 4px;
 	}
-	
-	/*.slider-message{
-		padding-top: 18%;
-	}*/
 
 	.motto{
 		font-size:  16px;
 	}
 
 	.slidertext .title{
-		font-size:  250%;
+		font-size:  40px;
 	}
 
 	.slidertext .message{
@@ -30,14 +25,14 @@
 		font-weight:  initial;
 		letter-spacing:  0px;
 	}
-.service{
+	.service{
 		width: 50%;
 		padding: 20px 0px;
 	}
 	
 
 	.statistics{
-		width: 49.259%
+		width: 48.259%;
 	}
 
 	.support{
@@ -84,23 +79,13 @@
 	
 @media(max-width:  900px)
 {
-	.nav-bar ul li{
-		clear:both;
-		/*padding: 10px 6px 9px 6px;*/
-	}
+	
 	.nav-bar{
-		clear:both;
-		float:left;
-		padding-left:15px;
+		display:none;
 	}
-
-	/*.nav-bar ul li:hover{
-		padding: 8px 4px 7px 4px;
+	.burger-menu{
+		display:block;
 	}
-	*/
-	/*.slider-message{
-		padding-top: 18%;
-	}*/
 	.sidertext{
 		display: none;
 	}

@@ -1,26 +1,30 @@
-function NumberAnimator(container,statObj,duration){
-	var val=0;
-	var maxVal = statObj.innerHTML;
+function NumberAnimator(numberObj,duration){
+	var currentValue=0;
+	var maxValue = numberObj.innerHTML;
 	var intervalId;
 	var self = this;
-	var step = maxVal/duration;		
+	var step = maxValue/duration*200;
+	var counterStarted = true;	
 
 	this.startCount = function()
 	{	
 		intervalId = setInterval(function(){
-			val += 1;
-			if(val <= maxVal){
-				statObj.innerHTML = formatting(val);
+			currentValue+=parseInt(step);
+			if(currentValue >= maxValue-step)
+			{
+				step=1;
+			}
+			if(currentValue <= maxValue){
+				numberObj.innerHTML = formatting(currentValue);
 			}
 			else
 			{
-				statObj.innerHTML = formatting(val);
 				clearInterval(intervalId);
 			}
-		},50);
+		},100);
 	}
 
 	var formatting=function(val){
-		return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+		return currentValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 	}
 }
